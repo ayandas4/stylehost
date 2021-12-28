@@ -1,0 +1,1490 @@
+button:focus {
+    background-color: transparent !important;
+}
+
+
+
+/**************************************************** Common Styles ****************************************************/
+.workAreaStyle {
+    height: -webkit-fill-available;
+    width: 100%;
+}
+
+.frameStyle1 {
+    /* width: 100%; */
+    width: -webkit-fill-available;
+    height: 100%;
+    border: none;
+    padding: 10px 0px;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.85), rgba(23, 12, 9, 0.9)), url(../img/banner/laptop.jpg);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    backdrop-filter: blur(5px);
+}
+
+.frameStyle2 {
+    width: 98%;
+    margin: 1% 1%;
+    border: none;
+    border-radius: 2px;
+    padding: 20px 20px;
+    background-color: rgba(215, 215, 215, 1.0);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.commonHeadingFontStyle {
+    font-size: 1.5em;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: rgba(50, 50, 50, 1.0);
+    text-align: left;
+    border-bottom: 1px solid rgba(150, 150, 150, 1.0);
+    padding-top: 2%;
+    margin-bottom: 2%;
+    width: 30%;
+}
+
+.commonTitleFontStyle {
+    font-size: 1.1em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-weight: normal;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.2;
+    color: rgba(0, 0, 0, 1.0);
+    text-align: center;
+}
+
+.commonCardStyle {
+    padding: 15px 15px;
+    margin: 0;
+    border-radius: 2px;
+    border-style: solid;
+    border-color: rgba(200, 200, 200, 0.0);
+    border-width: 0px;
+    background: rgba(255, 255, 255, 0);
+}
+
+.commonNumberFontStyle {
+    font-size: 0.6em;
+    padding-bottom: 5px;
+    font-weight: normal;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.2;
+    color: rgba(127, 127, 127, 1.0);
+    text-align: center;
+}
+
+.commonImageStyle {
+    margin: 0px auto;
+    width: 100%;
+    /* max-height: 205px; */
+    border-radius: 2px;
+    background: rgba(255, 255, 255, 1);
+}
+
+.commonNameAreaStyle {
+    position: relative;
+    width: 90%;
+    margin: -5% 5% 0px 5%;
+    padding: 12px 10px;
+    box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+    z-index: 2;
+}
+
+.commonNameFontStyle {
+    font-size: 1.1em;
+    padding-bottom: 10px;
+    font-weight: normal;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.2;
+    color: rgba(50, 50, 50, 1.0);
+    text-align: left;
+}
+
+.commonPriceFontStyle {
+    font-size: 0.9em;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.3;
+    padding-bottom: 5px;
+    color: rgba(50, 50, 50, 1.0);
+    text-align: left;
+}
+
+.commonDescriptionFontStyle {
+    font-size: 0.8em;
+    font-weight: normal;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.2;
+    padding-bottom: 5px;
+    color: rgba(50, 50, 50, 1.0);
+    text-align: left;
+}
+
+.noborder {
+    border: none;
+}
+
+#exitAppMessage {
+    position: absolute;
+    bottom: 100px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    width: -webkit-fill-available;
+    z-index: 3;
+}
+
+#exitAppMessageArea {
+    padding: 10px 20px;
+    color: rgb(255,255,255);
+    background-color: rgba(0,0,0,0.8);
+    border-radius: 5px;
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+/**************************************************** Loading Spinner Styles ****************************************************/
+
+.loadingSpinnerStyle {
+    display: none;
+    z-index: 100;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+.loadingSpinnerImageStyle {
+    position: fixed;
+    font-size: 100px;
+    left: calc(50% - 50px);
+    top: calc(50% - 50px);
+    color: rgba(255, 255, 255, 0.8);
+    text-shadow: 1px 1px 15px rgba(0, 0, 0, 0.5);
+}
+
+
+/**************************************************** Header Styles ****************************************************/
+.headerStyle {
+    display: block;
+    width: 100%;
+    border: none;
+    z-index: 100;
+}
+
+.headerAreaStyle{
+    width: 100%;
+    height: initial;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 0;
+    background-color: rgba(255,255,255,1);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.8);
+}
+
+.headerLogoAreStyle {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.dropDownMenuBtnStyle {
+    font-size: 1.5em;
+    color: rgb(150, 150,150);
+    padding: 0 5px;
+}
+
+.companyLogoAreaStyle{
+    background: transparent;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+}
+
+.userProfileBtnAreaStyle{
+    margin-right: 20px;
+    color: rgb(100,100,100);
+    font-size: 2.0em; 
+    text-align: center;
+}
+
+#loggedUserName {
+    color: rgb(55, 55, 55);
+    font-size: 0.5em;
+    padding-top: 2px;
+}
+
+/**************************************************** Company Logo Styles ****************************************************/
+
+.companyLogoStyle {
+    height: 4em;
+}
+
+.companyTagTextStyle {
+    color: rgb(150,150,150);
+    font-size: 1.0em;
+    padding: 5px 0;
+
+}
+
+
+/**************************************************** navMenu Styles ****************************************************/
+
+#navDrawer{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    z-index: 3;
+    display: none;
+}
+
+#navMenu{
+    height: 100%;
+    background-color: rgba(0,0,0,0.6);
+    transition: 0.3s;
+}
+
+.navMenuAreaStyle{
+    width: 100%;
+    backdrop-filter: blur(4px);
+    /*background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.9));*/
+    display: flex;
+    align-items: center;
+    padding: 5px 0;
+    background-color: rgba(255,255,255,1);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.8);
+}
+
+.navMenuBtnAreaStyle {
+    display: block;
+    width: -webkit-fill-available;
+}
+
+.dropdownMenuStyle {
+    padding: 30px 0 0 0;
+    justify-items: start;
+    background-color: rgba(255,255,255,0.8);
+    backdrop-filter: blur(8px);
+    width: 70%;
+    height: 100%;
+}
+
+.navMenuBtnStyle {
+    background: transparent;
+    border: none;
+    text-align: left;
+    position: relative;
+    display: flex;
+    padding: 20px 20px;
+    align-items: center;
+    border-bottom: 1px solid rgb(200,200,200);
+    width: 100%;
+}
+
+.navMenuActiveBtnStyle {
+    background: transparent;
+    border: none;
+    text-align: left;
+    position: relative;
+    display: inline-flex;
+    padding: 20px 20px;
+    align-items: center;
+    border-bottom: 1px solid rgb(200,200,200);
+    width: 100%;
+}
+
+.navMenuBtnTextStyle {
+    font-size: 1.0em;
+    color: rgba(0, 0, 0, 0.6);
+    font-family: 'Roboto', sans-serif;
+    text-align: left;
+}
+
+.navMenuActiveBtnTextStyle {
+    font-size: 1.0em;
+    color: rgba(0, 0, 0, 1.0);
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-weight: bold;
+}
+
+.navMenuIconStyle {
+    font-size: 1.0em;
+    color: rgba(0, 0, 0, 0.6);
+    padding-right: 20px;
+}
+
+.navMenuActiveIconStyle {
+    font-size: 1.0em;
+    color: rgba(0, 0, 0, 1.0);
+    padding-right: 20px;
+}
+
+.navMenuOverlayStyle {
+    width: 1.5em;
+    height: 1.5em;
+    font-size: 1em;
+    color: rgba(50, 50, 50, 1.0);
+    border-radius: 100%;
+    text-align: center;
+    line-height: 1.8;
+    top: -10px;
+    right: -10px;
+    position: absolute;
+}
+
+/**************************************************** Footer Styles ****************************************************/
+#systemArea {
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    padding:20px;
+    background:rgba(255,255,255,1.0);
+    z-index:13;
+    overflow-y: auto;
+}
+
+#systemWindow {
+    font-size: 1em;
+    color: rgba(50,50,50,1.0);
+    line-height: 1.5;
+}
+
+.nameFontStyle{
+    font-size:1.5em;
+    font-weight:normal;
+    font-family:'Roboto',sans-serif;
+    line-height:2; color:rgba(50,50,50,1.0);
+    text-align:left;
+    padding-top:20px;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+.headingFontStyle {
+    font-size:2.0em;
+    font-weight:bold;
+    font-family:'Roboto',sans-serif;
+    line-height:2;
+    color:rgba(50,50,50,1.0);
+    text-align:left;
+    border-bottom:1px solid rgba(0,0,0,0.5);
+}
+
+.descriptionFontStyle {
+    font-size:1em;
+    font-weight:normal;
+    font-family:'Roboto',sans-serif;
+    line-height:2;
+    color:rgba(50,50,50,1.0);
+    text-align:left;
+}
+
+.headerMenuStyle {
+    display: none;
+}
+
+/**************************************************** Footer Styles ****************************************************/
+
+.footerMenuStyle {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 15px 0;
+    background-image: linear-gradient(0deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.8));
+    text-align: center;
+    z-index: 2;
+}
+
+.footerMenuBtnAreaStyle {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footerMenuStyle img {
+    height: 20px;
+}
+
+.footerBtnStyle {
+    margin: 0px 25px;
+    background: transparent;
+    border: none;
+    border-radius: 30px;
+    text-align: center;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.footerBtnTextStyle {
+    font-size: 1em;
+    line-height: 1.2;
+    color: rgba(100, 100, 100, 1);
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+.footerActiveBtnTextStyle {
+    font-size: 1em;
+    line-height: 1.2;
+    color: rgba(100, 100, 100, 1);
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+.footerIconStyle {
+    font-size: 1.5em;
+    line-height: 1.0;
+    color: rgba(100, 100, 100, 1);
+    margin-bottom: 2px;
+}
+
+.footerActiveIconStyle {
+    font-size: 1.5em;
+    line-height: 1.0;
+    color: rgba(100, 100, 100, 1);
+}
+
+.footerOverlayStyle {
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+    padding: 0 5% 1%;
+    text-align: right;
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+}
+
+.footerOverlayFontStyle {
+    font-size: 1.2em;
+    font-weight: 100;
+    line-height: 1.1;
+    color: #fff;
+    text-align: right;
+}
+
+.footerOverlayFontStyle1 {
+    font-size: 2em;
+    font-weight: 100;
+    line-height: 1.5;
+    color: #fff;
+    text-align: right;
+}
+
+.footerOverlayFontStyle2 {
+    position: absolute;
+    width: 100%;
+    height: 20%;
+    top: 0px;
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+}
+
+
+/**************************************************** Home Styles ****************************************************/
+
+.homeMenu1Style {
+    /* position: absolute;
+    width: 100%;
+    height: 100%;
+    /* padding: 10px 5px;
+    margin: 0 auto; */
+    /* box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); */
+    /* backdrop-filter: blur(4px); */
+    /* z-index: 1; */
+    text-align: center;
+}
+
+.homeMenuBtnAreaStyle {
+    display: inline-block;
+    width: 80%;
+    margin-top: 40px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); 
+    backdrop-filter: blur(4px);
+}
+
+.homeMenu1BtnStyle {
+    position: relative;
+    margin: 5% 3%;
+    padding: 6% 2%;
+    /* width: 90%;
+    height: 44%; */
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 2px;
+    background: rgba(0, 0, 0, 0.9);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    display: inline-block;
+    white-space: nowrap;
+}
+
+.homeMenu1ActiveBtnStyle {
+    position: relative;
+    float: left;
+    margin: 2% 3%;
+    padding: 6% 2%;
+    /* width: 44%;
+    height: 44%; */
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 2px;
+    background: rgba(0, 0, 0, 0.9);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    white-space: nowrap;
+}
+
+.homeMenu1BtnTextStyle {
+    /* position: relative;
+    top: 25%; */
+    font-size: 1.2em;
+    margin: 20px 0px 10px;
+    line-height: 1.3;
+    color: rgba(255, 255, 255, 1.0);
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+.homeMenu1ActiveBtnTextStyle {
+    /* position: relative;
+    top: 25%; */
+    font-size: 1.2em;
+    margin: 20px 0px 10px;
+    line-height: 1.3;
+    color: rgba(255, 255, 255, 1.0);
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-weight: bold;
+}
+
+.homeMenu1IconStyle {
+    /* position: relative;
+    top: 20%; */
+    font-size: 3em;
+    color: rgba(255, 255, 255, 1.0);
+}
+
+.homeMenu1ActiveIconStyle {
+    /* position: relative;
+    top: 20%; */
+    font-size: 7em;
+    color: rgba(255, 255, 255, 1.0);
+}
+
+.homeMenu2Style {
+    display: none;
+    width: 100%;
+    padding: 2% 0;
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+    justify-content: center;
+}
+
+.homeMenu2BtnStyle {
+    margin: 0 3%;
+    background: transparent;
+    border: none;
+    text-align: center;
+    position: relative;
+}
+
+.homeMenu2ActiveBtnStyle {
+    margin: 0 2%;
+    background: transparent;
+    border: none;
+    text-align: center;
+    position: relative;
+}
+
+.homeMenu2BtnTextStyle {
+    font-size: 1.0em;
+    line-height: 1.3;
+    color: rgba(255, 255, 255, 0.6);
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+.homeMenu2ActiveBtnTextStyle {
+    font-size: 1.0em;
+    line-height: 1.3;
+    color: rgba(255, 255, 255, 1.0);
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-weight: bold;
+}
+
+.homeMenu2IconStyle {
+    font-size: 3.0em;
+    color: rgba(255, 255, 255, 0.6);
+    padding: 0;
+}
+
+.homeMenu2ActiveIconStyle {
+    font-size: 3.0em;
+    color: rgba(255, 255, 255, 1.0);
+    padding: 0;
+}
+
+.homeMenu2OverlayStyle {
+    width: 1.5em;
+    height: 1.5em;
+    font-size: 1.0em;
+    color: rgba(50, 50, 50, 1.0);
+    border-radius: 100%;
+    text-align: center;
+    line-height: 1.8;
+    top: -10px;
+    right: -10px;
+    position: absolute;
+}
+
+.homeMidSectionStyle {
+    position: absolute;
+    width: 100%;
+    height: 20%;
+    bottom: 0px;
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+}
+
+/**************************************************** Course Styles ****************************************************/
+
+#assessmentViewArea {
+	display: none;
+}
+#assessmentViewBox {
+	/* border: 1px solid rgb(200,200,200); */
+	padding: 10px;
+    background-color: rgb(230, 230, 230);
+}
+
+#assessmentBox {
+	background-image: url(../img/white-paper-texture.jpg);
+	background-color: rgb(255, 255, 255);
+	color: rgb(50, 50, 50);
+	border: 1px solid rgb(200, 200,200);
+	border-radius: 3px;
+	padding: 10px;
+	/*height: 65%;*/
+    overflow: auto;
+	margin: 20px 0;
+}
+.assessmenttitletext {
+	font-size: 2em;
+	text-align: center;
+	margin: 20px 0;
+	font-weight: bold;
+	color: rgb(255, 145, 50);
+}
+.assessmentresulttext {
+	font-size: 1.5em;
+	text-align: center;
+	margin: 40px 40px;
+	font-weight: bold;
+	color: rgb(50, 145, 250);
+}
+
+.assessmentquestioanswerbox{
+	margin-bottom: 20px;	
+}
+
+.assessmentquestion {
+	font-size: 2.0em;
+	Padding: 10px 0;
+}
+.assessmentanswer {
+	margin: 0;
+}
+.assessmentanswerlabel {
+    font-size: 1.5em;
+    padding: 8px 0;
+    font-weight: normal;
+    margin: 0 10px;
+    vertical-align: -webkit-baseline-middle;
+}
+.assessmentanswerlabel:hover {
+	background-color: rgb(200,255,250,0.4);
+}
+
+.warningText {
+	font-weight: bold;
+	animation: effect 1s linear infinite;	
+}
+@keyframes effect {
+    0% {
+    	color: rgb(255,0,0);
+    }
+    100% {
+    	color: rgb(0,0,255);
+    }
+}
+        
+#qPaperArea {
+	width: 90%;
+	background-color: rgb(240,240,240);
+	    height: -webkit-fill-available;
+    margin: 20px 0;
+}
+#qPaperFooter {
+	width: -webkit-fill-available;
+	text-align: right;
+    /*position: absolute;
+    bottom: 0;*/
+}
+#displayContent {
+	display: block;
+	height: -webkit-fill-available;
+}
+#timeLimitArea {
+	display: flex;
+	justify-content: flex-end;
+	padding: 10px 20px;
+}
+
+#assessmentDescriptionText {
+	font-size: 1.3em;
+	line-height: 1.3;
+	padding: 10px 0;
+}
+
+#assessmentTime {
+	padding: 0 10px;
+}
+
+#courseViewerArea {
+	padding: 0;
+}
+
+.bannerarea {
+	position: relative;	
+}
+
+.bannerimage {
+	width: 100%;
+}
+
+.bannername {
+	top: 0;
+    position: absolute;
+    color: white;
+    font-size: 2em;
+    font-weight: bold;
+    background-image: linear-gradient(90deg, black, transparent);
+    height: -webkit-fill-available;
+    width:75%;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+#courseName {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+#catalogdisplayarea {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    background-image: url(../img/banner/laptop.jpg);
+    filter: blur(10px);
+    /* height: -webkit-fill-available; */
+    background-size: cover;
+    position: absolute;
+    top: 0;
+}
+
+#coursedisplayarea {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    background-image: url(../img/banner/laptop.jpg);
+    filter: blur(10px);
+    /* height: -webkit-fill-available; */
+    background-size: cover;
+    position: absolute;
+    top: 0;
+}
+
+#coursedisplaybox {
+	width: 100%;
+	/*background-color: rgb(255,255,255);*/
+	background-color: rgba(0,0,0,0.6) !important;
+	margin: auto;
+	height: -webkit-fill-available;
+    position: relative;
+    overflow: auto;
+}
+
+.fancyscreen {
+	position: fixed;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(/img/laptop.jpg);
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+    z-index: -1;
+}
+
+.catalogticket {
+	margin: 10px;
+	padding: 10px 10px;
+	background-color: rgb(0,0,0);
+	color: rgb(250,250,250);
+    border-radius: 2px;
+	/*border-radius: 5px;
+	border: 1px solid rgb(220, 220, 200);*/
+	box-shadow: 2px 2px 4px rgb(0 0 0 / 50%);
+	cursor: pointer;
+}
+.catalogicon {
+	width:  100%;
+    height: 300px;
+	display: block;
+	max-height: 200px;
+	object-fit: cover;
+	
+}
+.cataloginfoarea {
+	margin-top: -50px;
+	padding-top: 25px;
+    display: inline-block;
+    width: -webkit-fill-available;
+	background-image: linear-gradient(180deg, transparent, black 50px);
+}
+.catalogname {
+	padding: 10px 0;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+	font-size: 1.6em;
+	text-align: left;
+	/* font-weight: bold; */
+    margin-top: 20px;
+}
+
+.catalogdescription {
+    font-size: 1.0em;
+    line-height: 1.25;
+    text-align: left;
+    font-weight: normal;
+    background: transparent;
+    width: -webkit-fill-available;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    height: 50px;
+    border: none;
+    color: rgb(250,250,250);
+    margin: 5px 0;
+}
+
+.catalogoneline {
+	padding: 10px 0;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+	font-size: 1.0em;
+	text-align: left;
+	font-weight: normal;
+	/*color: rgb(100,100,100);*/
+}
+
+.titleFontClass {
+    font-size: 1.6em;
+    padding: 10px 0 0px 0;
+    color: rgb(255 255 255);
+}
+
+.contentDetailText {
+    font-size: 1em;
+    line-height: 1.2;
+}
+
+#contentDescriptionField {
+    margin-top: 10px;
+}
+
+.catalogpopup {
+	display: none;
+	border: 1px solid rgb(200,200,200);
+	background-color: rgb(255,255,255);
+	border-radius: 5px;
+	padding: 10px;
+	position: absolute;
+	width: 500px;
+}
+
+.catalogpopupbanner {
+	width: 100%;
+}
+
+.catalogpopupname {
+	top: 0;
+    position: absolute;
+    color: white;
+    font-size: 1.5em;
+    font-weight: bold;
+    background-image: linear-gradient(90deg, black, transparent);
+    height: -webkit-fill-available;
+    width:75%;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.catalogpopupdescription {
+	padding: 5px 0 5px 0;
+	font-size: 1.0rem;
+	text-align: left;
+	font-weight: normal;
+	color: rgb(100,100,100);
+}
+
+.catalogpopuponeline {
+	padding: 10px 0 5px 0;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+	font-size: 1.0rem;
+	text-align: left;
+	font-weight: normal;
+	color: rgb(100,100,100);
+}
+
+#courseArea {
+	height: 100%;
+    position: relative;
+}
+
+#assessmentContentListArea {
+	/*background-color: rgb(240,240,240);	*/
+	border-left: 1px solid rgb(200,200,200);
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 0;
+    display: none;
+    width: 50%;
+    background-color: white;
+    transition: 0.5s;
+}
+#assessmentContentListArea.visible {
+    height: 100%;
+    display: block;
+}
+
+#assessmentContentListBox {
+	width: 100%;
+}
+
+#assessmentContentTitle {
+	padding: 10px 0;
+	font-size: 20px;
+	font-weight: bold;
+	border-bottom: 1px solid rgb(200,200,200);
+	color: rgb(150, 79, 1);
+}
+
+ #contentDescriptopnArea {
+ 	width: 100%;
+ 	/* padding: 10px; */
+ 	margin: auto;
+    background-color: rgba(0,0,0,0.5);
+ }
+ 
+ #courseTitleBox {
+ 	width: 100%;
+ }
+ 
+.coursecontentlist {
+	border-bottom: 1px solid rgb(200,200,200);
+	cursor: pointer;
+	margin-bottom: 3px;
+}
+.coursecontentlist:hover {
+	background-color: rgb(240,255,255);
+}
+
+.coursecontentlistfont {
+	font-size: 1.1em;
+	padding: 10px 5px;
+}
+
+#contentViewArea {
+	background-color: rgb(255,255,255);
+}
+
+#contentViewBox {
+	/* border: 1px solid rgb(200, 200, 200); */
+	margin: 0 auto;
+}
+
+.view-container {
+    position: relative;
+    padding-bottom: 56.25%; /*56.25% 16:9 */
+    height: 0;
+}
+.view-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#courseDescriptionBox {
+    padding: 10px 10px 10px 30px;
+    color: rgb(210,210,210);
+    height: 0;
+    display: none;
+    background-color: rgba(0,0,0,0.3);
+}
+
+#courseDescriptionBox.visible {
+    height: max-content;
+    display: block;
+}
+
+#contentDescriptionBox {
+    padding: 10px 10px 30px 30px;
+    color: rgb(210,210,210);
+    height: 0;
+    display: none;
+    background-color: rgba(0,0,0,0.3);
+}
+
+#contentDescriptionBox.visible {
+    height: max-content;
+    display: block;
+}
+
+.running {
+	font-weight: bold;
+	color: rgb(20, 150, 50);
+	font-size: 16px;
+}
+
+#templateViewerData {
+	width: 700px;
+	height: 350px;
+    position: relative;
+}
+#templateDataEditBox {
+	margin-bottom: 20px;
+	padding: 10px;
+	font-size: 0.6em;
+	color: rgb(216, 80, 0);
+}
+
+.templatesections {
+	cursor: pointer;
+}
+
+.templatesections:hover {
+	background-color: rgba(0, 150, 250, 0.1);
+}
+
+.selectedsection {
+	background-color: rgba(0, 0, 250, 0.2);
+	font-weight: bold;
+}
+#selectedSection {
+	padding: 10px;
+}
+
+.templatesection::-webkit-scrollbar {
+    width: 3px;
+}
+
+.coursemenu {
+    width: 100%;
+    display: flex;
+    background-color: rgba(0,0,0,0.8);
+    font-size: 1.2em;
+    color: rgb(210,210,210);
+    justify-content: space-between;
+    margin: 5px 0;
+}
+
+.carrot {
+	margin-right: 5px;
+    transition: 0.5s; 
+}
+
+.carrot-down {
+    -ms-transform: rotate(90deg); /* IE 9 */
+    -webkit-transform: rotate(90deg); /* Safari */
+    transform: rotate(90deg);
+    transition: 0.5s;
+}
+
+#aboutCourseButton {
+    padding: 15px 20px;
+}
+
+#courseContentButton {
+    padding: 15px 20px;
+}
+
+#contentOverviewButton {
+    padding: 15px 20px;
+}
+
+.button-selected {
+    font-weight: bold;
+    color: rgb(255,255,255);
+}
+
+/**************************************************** QR Asset Form Styles ****************************************************/
+#qrAssetSection {
+    position:absolute; 
+    top:0;
+    width:100%;
+    height: 100%;
+    background:rgba(0,0,0,0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 3;
+}
+
+#qrAssetArea {
+    background-color: rgb(255,255,255);
+    color: rgb(50, 50, 50);
+    font-size: 1em;
+    border-radius: 20px;
+    position: absolute;
+    left: 10px;
+    right: 10px;
+    top: 10px;
+    bottom: 10px;
+    overflow: auto;
+}
+
+#qrAssetTitle {
+    background-color: rgb(20,80,150);
+    color: rgb(240, 240, 240);
+    font-size: 1.5em;
+    padding: 15px;
+    text-align: left;
+    width: 100%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+#qrAssetCloseButton {
+    position: absolute;
+    right: 0;
+    color: rgb(240, 240, 240);
+    font-size: 1.5em;
+    padding: 15px;
+}
+
+#qrAssetFooter {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.qrAssetButton {
+    background-color: rgb(50, 100, 230);
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    color: rgb(240, 240, 240);
+    font-size: 1.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.qrAssetImageButton {
+    background-color: rgb(50, 100, 230);
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    color: rgb(240, 240, 240);
+    font-size: 1.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#qrAssetBox {
+    padding: 10px 10px;
+    line-height: 1.3;
+    height: calc(100% - 120px);
+    overflow: auto;
+}
+
+.formheading1 {
+    font-size: 1.5em;
+    line-height: 1.5;
+    text-align: center;
+}
+.formdescription {
+    font-size: 1.0em;
+    line-height: 1.5;
+    text-align: center;
+    padding-bottom: 10px;
+
+}
+.formlabel {
+    font-size: 1em;
+    font-weight: bold;
+    line-height: 2.0;
+}
+.formdata {
+    font-size: 1em;
+    font-weight: normal;
+    line-height: 1.5;
+    padding: 0 5px;
+}
+
+.clickable {
+    color: rgb(0,0,255);
+}
+
+/**************************************************** Device Info Styles ****************************************************/
+#deviceInfoSection {
+    position:absolute; 
+    top:0;
+    width:100%;
+    height: 100%;
+    background:rgba(0,0,0,0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 3;
+}
+
+#deviceInfoArea {
+    background-color: rgb(255,255,255);
+    color: rgb(50, 50, 50);
+    font-size: 1em;
+    border-radius: 5px;
+    width: 90%;
+}
+
+#deviceInfoTitle {
+    background-color: rgb(50,50,50);
+    color: rgb(240, 240, 240);
+    font-size: 2.5em;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+#deviceInfoBox {
+    padding: 40px 20px;
+    line-height: 1.3;
+}
+
+#loginBackground {
+    position:absolute;
+    top:0;
+    height: 100%;
+    width: 100%;
+    backdrop-filter: blur(10px);
+    z-index: 1;
+}
+
+#loginArea {
+    position:absolute;
+    top:15%;
+    width:100%;
+    background:rgba(0,0,0,0);
+    padding: 10px;
+    z-index: 2;
+}
+
+#logoutBackground {
+    position:absolute;
+    top:0;
+    height: 100%;
+    width: 100%;
+    backdrop-filter: blur(10px);
+    z-index: 1;
+}
+
+#logoutArea {
+    position:absolute;
+    top:15%;
+    width:100%;
+    background:rgba(0,0,0,0);
+    padding: 10px;
+    z-index: 2;
+}
+
+/**************************************************** Dialog Box ****************************************************/
+
+.dialogBoxButtonStyle {
+    line-height: 1.5;
+    font-size: 1.5em;
+    text-align: right;
+    padding: 0px 40px;
+    color:rgb(50,50,50);
+}
+
+.dialogBoxTextStyle {
+    margin: 30px 10px;
+    line-height: 1.5;
+    font-size: 1em;
+    color: rgb(50,50,50);
+}
+
+.dialogBoxCardStyle {
+    z-index: 1000;
+    padding:10px 10px;
+    text-align: center;
+    border-radius:5px;
+    background:rgba(255,255,255, 1.0);
+    box-shadow:4px 4px 8px 0 rgba(0, 0, 0, 0.8);
+}
+
+.dialogBoxBackgroundStyle {
+    z-index: 999;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0,0,0,0);
+}
+
+/**************************************************** Responsive Styles ****************************************************/
+
+
+/* Portrait and Landscape */
+
+
+/* @media (min-device-width: 1701px) and (max-device-width: 1920px) {
+        .homeMenu1BtnStyle {
+            padding: 10% 2%;
+        }
+        .homeMenu1BtnTextStyle {
+            font-size: 2em;
+        }
+        .homeMenu1Style {
+            width: 38%;
+        }
+    }
+    
+    @media (min-device-width: 1440px) and (max-device-width: 1700px) {
+        .homeMenu1BtnStyle {
+            padding: 10% 2%;
+        }
+        .homeMenu1BtnTextStyle {
+            font-size: 2em;
+        }
+    }
+    
+    @media (min-device-width: 1366px) and (max-device-width: 1699px) {
+        .homeMenu1BtnStyle {
+            padding: 7% 1%;
+        }
+        .homeMenu1BtnTextStyle {
+            font-size: 1.6em;
+        }
+        .homeMenu1Style {
+            width: 36%;
+        }
+        .homeMenu1IconStyle {
+            font-size: 4em;
+        }
+    }
+    
+    @media (min-device-width: 1024px) and (max-device-width: 1365px) {
+        .homeMenu1BtnStyle {
+            padding: 8% 2%;
+        }
+        .homeMenu1BtnTextStyle {
+            font-size: 1.7em;
+        }
+        .homeMenu1IconStyle {
+            font-size: 4.5em;
+        }
+    }
+    
+    @media (min-device-width: 768px) and (max-device-width: 1023px) {
+        .homeMenu1BtnStyle {
+            padding: 8% 2% 5%;
+        }
+        .homeMenu1BtnTextStyle {
+            font-size: 1.4em;
+        }
+        .homeMenu1IconStyle {
+            font-size: 4em;
+        }
+        .homeMenu1Style {
+            width: 56%;
+        }
+        .slick-dots {
+            margin-top: 8px !important;
+        }
+    }
+    
+    @media screen and (max-device-width: 800px) and (orientation: landscape) {
+        .homeMenu1BtnStyle {
+            padding: 5% 2% 5%;
+        }
+        .homeMenu2BtnStyle,
+        .homeMenu2ActiveBtnTextStyle,
+        .homeMenu1BtnTextStyle,
+        .homeMenu2BtnTextStyle {
+            font-size: 1.3em;
+            margin: 0 2%;
+        }
+        .homeMenu2IconStyle {
+            font-size: 1.4em;
+        }
+        .homeMenu2ActiveIconStyle {
+            font-size: 2.1em;
+        }
+    }
+    
+    @media (min-device-width: 480px) and (max-device-width: 767px) {
+        .homeMenu1Style {
+            width: 60%;
+        }
+        .homeMenu1BtnStyle {
+            padding: 8% 2%;
+        }
+        .homeMenu1IconStyle {
+            margin-bottom: 18px;
+            display: block;
+        }
+        .homeMenu2BtnStyle,
+        .homeMenu2ActiveBtnTextStyle,
+        .homeMenu1BtnTextStyle,
+        .homeMenu2BtnTextStyle {
+            font-size: 1em;
+            margin: 0 2%;
+        }
+        .homeMenu2IconStyle {
+            font-size: 1.2em;
+        }
+        .homeMenu2ActiveIconStyle {
+            font-size: 1.5em;
+        }
+    } */
